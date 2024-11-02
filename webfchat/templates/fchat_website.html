@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ website.name }}</title>
+</head>
+
+<body>
+    <h1>{{ website.name }}</h1>
+    <p>{{ website.description }}</p>
+
+    <!-- Embedding the scripts in the HTML -->
+    <div>
+        {{ website.scripts | safe }}
+    </div>
+</body>
